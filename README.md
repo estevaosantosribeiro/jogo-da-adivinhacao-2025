@@ -48,8 +48,7 @@ A pontuação inicial é **100 pontos** e diminui conforme a diferença entre o 
 ## Como Executar
 1. Clone este repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd nome-do-projeto
+   git clone https://github.com/estevaosantosribeiro/jogo-da-adivinhacao-2025.git
    ```
 
 2. Instale as dependências:
