@@ -1,59 +1,66 @@
-# JogoDaAdivinhacao2025
+# Jogo de Adivinhação - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+## Descrição
+Este projeto é um **jogo de adivinhação** desenvolvido com **Angular**.  
+O objetivo é adivinhar o número secreto dentro de um intervalo, com base em dicas fornecidas pelo sistema.  
+O jogador pode escolher entre três níveis de dificuldade e acompanhar sua pontuação a cada tentativa.
 
-## Development server
+---
 
-To start a local development server, run:
+## Funcionalidades
+- Seleção de **nível de dificuldade**: Fácil, Médio ou Difícil.
+- Dicas automáticas indicando se o número secreto é **maior ou menor** que o digitado.
+- Sistema de **pontuação dinâmica**, com descontos conforme a distância entre o número escolhido e o número secreto.
+- Exibição de **tentativas restantes**.
+- Botão de **reinício** do jogo.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Regras do Jogo
+- **Fácil**  
+  - Intervalo: `1 a 10`  
+  - Tentativas: `3`  
 
-## Code scaffolding
+- **Médio**  
+  - Intervalo: `1 a 50`  
+  - Tentativas: `6`  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Difícil**  
+  - Intervalo: `1 a 100`  
+  - Tentativas: `7`  
 
-```bash
-ng generate component component-name
-```
+A pontuação inicial é **100 pontos** e diminui conforme a diferença entre o número digitado e o número secreto:
+- Diferença ≥ 10 → `-10 pontos`  
+- Diferença ≥ 5 → `-5 pontos`  
+- Diferença < 5 → `-2 pontos`  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Tecnologias Utilizadas
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap](https://getbootstrap.com/) (para estilos)
 
-## Building
+---
 
-To build the project run:
+## Como Executar
+1. Clone este repositório:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd nome-do-projeto
+   ```
 
-```bash
-ng build
-```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+4. Rode o servidor de desenvolvimento:
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+## Observações
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este é um projeto simples criado com foco em prática e aprendizado de Angular.
+Futuramente, podem ser adicionados testes automatizados, melhorias de UI/UX e persistência de pontuação.
