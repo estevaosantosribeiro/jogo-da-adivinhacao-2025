@@ -1,5 +1,7 @@
 # Jogo de Adivinhação - Angular
 
+<img width="1912" height="907" alt="jogo da adivinhacao" src="https://github.com/user-attachments/assets/16bcda64-c54d-418b-973a-7e45b473d77f" />
+
 ## Descrição
 Este projeto é um **jogo de adivinhação** desenvolvido com **Angular**.  
 O objetivo é adivinhar o número secreto dentro de um intervalo, com base em dicas fornecidas pelo sistema.  
